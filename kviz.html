@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Početna</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href ="style.css" rel ="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0;">
+  <h1 class="head-title">PROJEKTNI ZADATAK</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #660000;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="navbar-brand" href="pocetna.html">Početna</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="rodjendanski_poklon.html">Rođendanski poklon</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="omiljen_film.html">Omiljeni film</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="omiljeni_grad.html">Omiljeni grad</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hobi.html">Hobi</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="galerija.html">Galerija</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="kviz.html">Kviz</a>    
+	  </li> 
+    </ul>
+  <!--</div>-->
+</nav>
+
+<div class="container-fluid">
+  <!--`container-fluid` omogućava da se "DIV" pozicionira na početak stranice, odn. da se razvuče. Gornja margina (margina između gornjeg i donjih DIV-a/kontejnera) je bila 30px-->
+
+  <div class="row">
+    <div class="col-sm-5 col-md-3 side-portfolio">
+      
+      <img src="bio_foto/renata.jpg" alt="Renata" class="rounded img-fluid" width="350" height="499">
+      <h1 class="details-title">Renata Šikanjić Novaković</h1>
+
+      <ul class="nav nav-pills flex-column">             
+        <li class="nav-item"><strong>Moja stranica:</strong>
+          <a class="text-secondary" href="https://www.facebook.com/VunenaR/">VunenaR</a>
+        </li>              
+        <li class="nav-item"><strong>Prodajni sajt:</strong>
+          <a class="text-secondary" href="https://www.etsy.com/shop/VunenaR">Etsy</a>
+        </li>
+        <li class="nav-item"><strong>Email:</strong>
+          <a class="text-secondary" href="mailto:renatasikanjic@gmail.com">renatasikanjic@gmail.com</a>
+        </li>
+      </ul>
+<hr class="d-sm-none">
+     </div>
+
+    <div class="col-sm-7 col-md-8">
+	  <div class="main-content"> 
+        <h1 class="page-title">KVIZ</h1>
+        
+		<form id = "quiz" name = "quiz">
+<p class = "questions">1. Šta želim za rođendanski poklon?</p>
+<input type = "radio" id = "mc" name = "question1" value = "knjiga"> Knjigu<br>
+<input type = "radio" id = "mc" name = "question1" value = "cipele"> Cipele<br>
+<input type = "radio" id = "mc" name = "question1" value = "torba"> Torbu<br>
+<input type = "radio" id = "mc" name = "question1" value = "vunica"> Vunicu<br>
+<br>
+
+<p class = "questions">2. Kako se zove glumac koji igra naslovnu ulogu mog omiljenog filma?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Anthony"> Anthony Michael Hall<br>
+<input type = "radio" id = "mc" name = "question2" value = "Johnny"> Johnny Depp<br>
+<input type = "radio" id = "mc" name = "question2" value = "Robert"> Robert Oliveri<br>
+<input type = "radio" id = "mc" name = "question2" value = "Vincent"> Vincent Price<br>
+<br>
+
+<p class = "questions">3. Šta je to Alpaca?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "planina"> Planinski masiv<br>
+<input type = "radio" id = "mc" name = "question3" value = "zivotinja"> Životinja<br>
+<input type = "radio" id = "mc" name = "question3" value="biljka"> Biljka <br>
+<br>
+
+<p class = "questions">4. Moj omiljeni grad?</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "Banjaluka"> Banjaluka<br>
+<input type = "radio" id = "mc" name = "question4" value = "Prijedor"> Prijedor<br>
+<input type = "radio" id = "mc" name = "question4" value = "Prag"> Prag<br>
+<br>
+
+<p class = "questions">5. Koji je moj hobi?</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "fudbal"> Fudbal<br>
+<input type = "radio" id = "mc" name = "question5" value = "balet"> Balet<br>
+<input type = "radio" id = "mc" name = "question5" value = "rucni rad"> Rucni rad<br>
+<br>
+
+<p class = "questions">6. Da li Vam se sviđa kviz?</p>
+
+<input id = "textbox" type = "text" name = "question6">
+<br>
+
+<input id = "button" type = "button" value = "gotovo" onclick = "check();">
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+		</form>
+	  </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="jumbotron text-center footer">
+  <span id="vrijeme"></span>
+  <p>Renata®</p>
+</div>
+  <script src="js/time.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

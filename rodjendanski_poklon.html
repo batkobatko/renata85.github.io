@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Početna</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href ="style.css" rel ="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0;">
+  <h1 class="head-title">PROJEKTNI ZADATAK</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #660000;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="navbar-brand" href="pocetna.html">Početna</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="rodjendanski_poklon.html">Rođendanski poklon</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="omiljen_film.html">Omiljeni film</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="omiljeni_grad.html">Omiljeni grad</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hobi.html">Hobi</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="galerija.html">Galerija</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="kviz.html">Kviz</a>    
+	  </li> 
+    </ul>
+  <!--</div>-->
+</nav>
+
+<div class="container-fluid">
+  <!--`container-fluid` omogućava da se "DIV" pozicionira na početak stranice, odn. da se razvuče. Gornja margina (margina između gornjeg i donjih DIV-a/kontejnera) je bila 30px-->
+
+  <div class="row">
+    <div class="col-sm-5 col-md-3 side-portfolio">
+      
+      <img src="bio_foto/renata.jpg" alt="Renata" class="rounded img-fluid" width="350" height="499">
+      <h1 class="details-title">Renata Šikanjić Novaković</h1>
+
+      <ul class="nav nav-pills flex-column">             
+        <li class="nav-item"><strong>Moja stranica:</strong>
+          <a class="text-secondary" href="https://www.facebook.com/VunenaR/">VunenaR</a>
+        </li>              
+        <li class="nav-item"><strong>Prodajni sajt:</strong>
+          <a class="text-secondary" href="https://www.etsy.com/shop/VunenaR">Etsy</a>
+        </li>
+        <li class="nav-item"><strong>Email:</strong>
+          <a class="text-secondary" href="mailto:renatasikanjic@gmail.com">renatasikanjic@gmail.com</a>
+        </li>
+      </ul>
+	  <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-7 col-md-8">
+      <div class="main-content"> 
+        <h1 class="page-title">IŠČEKUJUĆI ROĐENDANSKI POKLON</h1>
+		<p id="demo"></p>
+		<img src="bio_foto/poklon.jpg" alt="Renata" class="rounded img-fluid">
+     
+        <div align="center"><strong>Vunicaaaaaaaaaaaa</strong></div>
+        <br>
+		<p>Idealan rođendanski poklon za mene bi bila vunica. Volim vunicu svih sastava i boja ali posebno me obraduje vunica Alpaca brenda DROPS zato što je zaista posebna pređa.. </p>
+        <br>
+		<h4>Site:</h4> <a href="https://www.woolwarehouse.co.uk/">woolwarehouse</a>
+		<br>
+
+        <iframe width="500" height="200" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Wool%20Warehouse%2012%20Longfield%20Road%20Sydenham%20Industrial%20Estate%20Leamington%20Spa+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/en/">Googlemapsgenerator.com/en/</a> & <a href="http://merrymobiles.co.uk/">loadonlineph</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+	  </div>
+	</div>
+
+<div class="jumbotron text-center footer">
+  <span id="vrijeme"></span>
+  <p>Renata®</p>
+</div>
+
+  <script src="js/time.js"></script>
+  <script src="js/rodjendand.js"></script>
+
+</body>
+</html> 
